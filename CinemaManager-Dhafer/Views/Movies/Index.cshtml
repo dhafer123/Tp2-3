@@ -1,0 +1,137 @@
+﻿@model IEnumerable<CinemaManager_Dhafer.Models.Cinema.Movie>
+
+@{
+    ViewData["Title"] = "Movies Index";
+    var titleSearchTerm = ViewBag.SearchType == "title" ? ViewBag.SearchTerm as string : "";
+    var genreSearchTerm = ViewBag.SearchType == "genre" ? ViewBag.SearchTerm as string : "";
+}
+
+<div class="container mt-4">
+    <h1 class="mb-4">Movies</h1>
+
+    <!-- Search by Title Form -->
+    <form asp-action="SearchByTitle" method="get" class="mb-3">
+        <div class="input-group">
+            <input type="text" name="title" class="form-control"
+                   placeholder="Search by title..." value="@titleSearchTerm">
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Search Title
+                </button>
+                @if (!string.IsNullOrEmpty(titleSearchTerm))
+                {
+                    <a asp-action="Index" class="btn btn-outline-secondary">
+                        <i class="fas fa-times"></i> Clear
+                    </a>
+                }
+            </div>
+        </div>
+    </form>
+
+    <!-- Search by Genre Form -->
+    <form asp-action="SearchByGenre" method="get" class="mb-4">
+        <div class="input-group">
+            <input type="text" name="genre" class="form-control"
+                   placeholder="Search by genre..." value="@genreSearchTerm">
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-search"></i> Search Genre
+                </button>
+                @if (!string.IsNullOrEmpty(genreSearchTerm))
+                {
+                    <a asp-action="Index" class="btn btn-outline-secondary">
+                        <i class="fas fa-times"></i> Clear
+                    </a>
+                }
+            </div>
+        </div>
+    </form>
+
+    <!-- Action Links -->
+    <div class="mb-4">
+        <a asp-action="Create" class="btn btn-success">
+            <i class="fas fa-plus"></i> Create New
+        </a>
+        <a asp-action="MoviesAndTheirProds" class="btn btn-info ml-2">
+            <i class="fas fa-list"></i> View with Producers
+        </a>
+        <a asp-action="MoviesAndTheirProds_UsingModel" class="btn btn-info ml-2">
+            <i class="fas fa-list-alt"></i> View with Producers (Model)
+        </a>
+    </div>
+
+    <!-- Movies Table -->
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Title)</th>
+                    <th>@Html.DisplayNameFor(model => model.Genre)</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Genre)</td>
+                        <td class="text-center">
+                            <div class="btn-group" role="group">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">
+                                    <i class="fas fa-edit"></i> Edit
+                                </a>
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">
+                                    <i class="fas fa-info-circle"></i> Details
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">
+                                    <i class="fas fa-trash-alt"></i> Delete
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-warning mt-4">
+            No movies found.
+            @if (!string.IsNullOrEmpty(titleSearchTerm))
+            {
+                <span>Try a different title.</span>
+            }
+            else if (!string.IsNullOrEmpty(genreSearchTerm))
+            {
+                <span>Try a different genre.</span>
+            }
+        </div>
+    }
+</div>
+
+@section Styles {
+    <style>
+        .table th {
+            vertical-align: middle;
+        }
+
+        .btn-group .btn {
+            margin-right: 5px;
+        }
+
+            .btn-group .btn:last-child {
+                margin-right: 0;
+            }
+
+        .input-group {
+            max-width: 500px;
+        }
+    </style>
+}
+
+@section Scripts {
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+}

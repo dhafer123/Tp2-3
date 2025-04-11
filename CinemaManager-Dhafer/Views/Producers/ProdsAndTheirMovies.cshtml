@@ -1,0 +1,32 @@
+﻿@model IEnumerable<CinemaManager_Dhafer.Models.Cinema.Producer>
+
+@{
+    ViewData["Title"] = "Producers and Their Movies";
+}
+
+<h1>Producers and Their Movies</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Producer Name</th>
+            <th>Producer Nationality</th>
+            <th>Movie Title</th>
+            <th>Movie Genre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producer in Model)
+        {
+            @foreach (var movie in producer.Movies)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => producer.Name)</td>
+                    <td>@Html.DisplayFor(modelItem => producer.Nationality)</td>
+                    <td>@Html.DisplayFor(modelItem => movie.Title)</td>
+                    <td>@Html.DisplayFor(modelItem => movie.Genre)</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

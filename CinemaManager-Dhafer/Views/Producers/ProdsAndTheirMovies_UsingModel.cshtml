@@ -1,0 +1,31 @@
+﻿@model IEnumerable<CinemaManager_Dhafer.Models.Cinema.ProdMovie>
+
+@{
+    ViewData["Title"] = "Producers and Their Movies (Using Model)";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table table-bordered">
+    <thead class="thead-light">
+        <tr>
+            <th>Producer Name</th>
+            <th>Producer Nationality</th>
+            <th>Movie Title</th>
+            <th>Movie Genre</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.pName</td>
+                <td>@item.pNat</td>
+                <td>@item.mTitle</td>
+                <td>@item.mGenre</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>

@@ -1,0 +1,34 @@
+﻿@model IEnumerable<CinemaManager_Dhafer.Models.Cinema.Movie>
+
+@{
+    ViewData["Title"] = "Films du producteur: " + ViewBag.ProducerName;
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Titre</th>
+            <th>Genre</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                <td>@Html.DisplayFor(modelItem => item.Genre)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-warning">Modifier</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-info">Détails</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Retour à la liste complète</a>
+</div>

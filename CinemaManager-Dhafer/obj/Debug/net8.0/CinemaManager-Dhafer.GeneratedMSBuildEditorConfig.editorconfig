@@ -1,0 +1,109 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CinemaManager_Dhafer
+build_property.RootNamespace = CinemaManager_Dhafer
+build_property.ProjectDir = C:\Users\dhafe\source\repos\CinemaManager-Dhafer\CinemaManager-Dhafer\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\dhafe\source\repos\CinemaManager-Dhafer\CinemaManager-Dhafer
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Movies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Movies/MoviesAndTheirProds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXE1vdmllc0FuZFRoZWlyUHJvZHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Movies/MoviesAndTheirProds_UsingModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXE1vdmllc0FuZFRoZWlyUHJvZHNfVXNpbmdNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Movies/MyMovies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXE15TW92aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Movies/SearchBy2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXFNlYXJjaEJ5Mi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Movies/SearchByTitle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXFNlYXJjaEJ5VGl0bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Producers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Producers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Producers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Producers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Producers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Producers/ProdsAndTheirMovies.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXFByb2RzQW5kVGhlaXJNb3ZpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Producers/ProdsAndTheirMovies_UsingModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXFByb2RzQW5kVGhlaXJNb3ZpZXNfVXNpbmdNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dhafe/source/repos/CinemaManager-Dhafer/CinemaManager-Dhafer/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-1q5jh20ibo
